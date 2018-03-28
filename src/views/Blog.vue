@@ -16,42 +16,22 @@
         <div class="side">
           <side-section>
             <div slot="sidecontent">
-              <h3>
-                <a href="">JhonXY</a>
-                <span class="cat-desc">Just A Coding Peasant</span>
-              </h3>
-              <div class="pres">
-              <a href="" class="pic">
-              <img src="/static/card.jpg" alt="我的头像">
-              </a>
-              <a href="" class="detail">
-                <span class="item-info">
-                  <span class="item-title">XY</span>
-                  <span class="item-desc">2017</span>
-                </span>
-              </a>
-              </div>
-              <div class="social">
-                <a data-balloon="微博" href="http://weibo.com/" rel="nofollow" class="icon"><i class="fa fa-weibo" style="background-color: #dd4b39"></i></a>
-                <a data-balloon="github" href="https://github.com/JhonXY" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
-                <el-popover
-                  ref="youxiang"
-                  placement="bottom"
-                  title="我的邮箱"
-                  width="50"
-                  trigger="hover"
-                  content="1076849402@qq.com">
-                </el-popover>
-                <a data-balloon="邮箱" href="javascript:;" rel="nofollow" class="icon" v-popover:youxiang><i class="fa fa-envelope" style="background-color: #3b5998"></i></a>
-                <el-popover
-                  ref="jianli"
-                  placement="bottom"
-                  title="我的简历"
-                  width="50"
-                  trigger="hover"
-                  content="暂无内容">
-                </el-popover>
-                <a data-balloon="微博" href="javascript:;" rel="nofollow" class="icon" v-popover:jianli><i class="fa fa-address-card-o" style="background-color: #80b953"></i></a>
+              <div class="admin-info">
+                <header><img src="../assets/touxiang.jpg" alt="avatar"></header>
+                <p class="admin-name">Wwqhy</p>
+                <p class="admin-desc">前端打杂人员</p>
+                <div class="social">
+                <a data-balloon="github" href="https://github.com/wwqhy" rel="nofollow" class="icon"><i class="fa fa-github" style="background-color: #55acee;"></i></a>
+                  <el-popover
+                    ref="youxiang"
+                    placement="bottom"
+                    title="我的邮箱"
+                    width="50"
+                    trigger="hover"
+                    content="510094288@qq.com">
+                  </el-popover>
+                  <a data-balloon="邮箱" href="javascript:;" rel="nofollow" class="icon" v-popover:youxiang><i class="fa fa-envelope" style="background-color: #3b5998"></i></a>
+                </div>
               </div>
             </div>
           </side-section>
@@ -72,7 +52,7 @@
                     </span>
                   </div>
                   <div class="message-avatar">
-                    <img :src="'https://cdn.v2ex.com/gravatar/' + item.email + '?s=120&d=mm&r=g'" alt="">
+                    <img src="../assets/avator.png" alt="">
                   </div>
                 </router-link>
               </li>
@@ -218,8 +198,7 @@ a.pic img {
 }
 
 .social {
-  padding-top: 10px;
-  padding-left: 110px;
+  text-align: center;
 }
 
 .detail {
@@ -345,5 +324,32 @@ a.pic img {
   text-overflow: ellipsis;
   white-space: nowrap;
   display: block;
+}
+.admin-info {
+  background: #fff;
+  margin-bottom: 20px;
+}
+.admin-info header {
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+.admin-info header img {
+  width: 150px;
+  height: 150px;
+  max-width: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.admin-name {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px 0px;
+  font-size: 1.5em;
+  font-family: "Monospace Number", "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.admin-desc {
+  text-align: center;
+  padding: 10px 15px 20px 15px;
+  font-size: 14px;
 }
 </style>

@@ -11,7 +11,7 @@
       active-text-color="#ffd04b">
       <el-menu-item index="/blog"><i class="fa fa-home"></i>首页</el-menu-item>
       <el-submenu index="2">
-        <template slot="title"><i class="fa fa-cog"></i>分类</template>
+        <template slot="title"><i class="fa fa-cog"></i>归档</template>
         <el-menu-item :index="item.tag" v-for="(item, index) in tags" :key="index" @click="getOne(item.tag)">{{item.tag}}</el-menu-item>
       </el-submenu>
       <el-menu-item index="/messages"><i class="fa fa-comment"></i>留言</el-menu-item>

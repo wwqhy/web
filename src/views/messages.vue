@@ -4,7 +4,7 @@
     <div class="headpic">
       <div class="container headtitle full">
         <div class="title">
-          <h1 href="/blog">Chunibyo</h1>
+          <h1 href="/blog">freedom</h1>
         </div>
       </div>
     </div>
@@ -14,11 +14,11 @@
           <div class="full-content">
             <div class="messages-text post-content">
               <div style="overflow:hidden;margin-bottom:20px;">
-                <h3 class="hestia-title text-center">Leave a Reply</h3>
-                <textarea ref='textBox' spellcheck='false' row="1" placeholder="咱们交♂流交♂流~~" v-model="message" class="msg-content" cols="45" rows="8" aria-required="true"></textarea>
+                <h3 class="hestia-title text-center">只要你需要我，我永远在你能看到的地方</h3>
+                <textarea ref='textBox' spellcheck='false' row="1" placeholder="留言内容" v-model="message" class="msg-content" cols="45" rows="8" aria-required="true"></textarea>
                 <div class="input">
-                  <input type="text" placeholder="起个名吧" v-model.trim="name" class="msg-name">
-                  <input type="email" placeholder="你的邮箱哦" v-model.trim="email" class="msg-email">
+                  <input type="text" placeholder="名字" v-model.trim="name" class="msg-name">
+                  <input type="email" placeholder="请输入你的邮箱" v-model.trim="email" class="msg-email">
                 </div>
                 <span>{{status}}</span>
                 <br>
@@ -31,9 +31,9 @@
                   <li class="msg-list-item" v-for="item in messagesList">
                     <article>
                       <header>
-                        <img class="avatar" :src="'https://cdn.v2ex.com/gravatar/' + item.email + '?s=120&d=mm&r=g'" alt="">
+                        <img class="avatar" src="../assets/avator.png" alt="">
                         <div class="msg-author">
-                          <div class="msg-author-name">{{item.name}}  <span id="admin" v-if="item.email == 'e210aaaced957c912a7dd01cccc53004'">管理员</span></div>
+                          <div class="msg-author-name">{{item.name}}  <span id="admin" v-if="item.email == 'ba97821f70753312b8dc21bf00624a07'">管理员</span></div>
                         </div>
                         <div class="msg-author-time">{{item.createDate}}</div>
                       </header>
